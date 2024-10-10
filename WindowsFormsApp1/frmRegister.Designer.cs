@@ -37,6 +37,8 @@
             this.lblPhoneNo = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPhoneNo = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.lblLogin = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtPassword
@@ -73,12 +75,13 @@
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(329, 312);
+            this.btnRegister.Location = new System.Drawing.Point(333, 284);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(113, 54);
             this.btnRegister.TabIndex = 9;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // lblEmail
             // 
@@ -112,11 +115,32 @@
             this.txtPhoneNo.Size = new System.Drawing.Size(120, 20);
             this.txtPhoneNo.TabIndex = 13;
             // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(421, 365);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(72, 24);
+            this.btnLogin.TabIndex = 15;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // lblLogin
+            // 
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.Location = new System.Drawing.Point(290, 371);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(132, 13);
+            this.lblLogin.TabIndex = 14;
+            this.lblLogin.Text = "Already have an account?";
+            // 
             // frmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.txtPhoneNo);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblPhoneNo);
@@ -144,5 +168,7 @@
         private System.Windows.Forms.Label lblPhoneNo;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPhoneNo;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Label lblLogin;
     }
 }
