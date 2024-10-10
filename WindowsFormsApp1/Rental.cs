@@ -22,10 +22,6 @@ namespace CarRentSys
         private String regNum;
         private String rentStart;
         private String returnDate;
-        p
-       
-
-
 
 
 
